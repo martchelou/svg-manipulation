@@ -1,0 +1,26 @@
+// framework
+@use '../../node_modules/bootstrap/scss/bootstrap';
+// customs files
+@use 'colors';
+@use 'grid';
+@use 'modal';
+@use 'spinner';
+@use 'mapa';
+// components
+header {
+    background-color: var(--purple--100);
+    .text-purple-dark { color: var(--purple--900);}
+}
+footer {
+    color: var(--purple--100);
+    background-color: var(--purple--900);
+    .btn-purple {
+        color: var(--purple--200);
+        background-color: var(--purple--900);
+        &:hover {
+            color: var(--purple--900);
+        background-color: var(--purple--200);
+        }
+    }
+}
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- seo -->
+    <meta name="keywords" content="HTML5, CSS3, javascript, SASS, SVG, Bootstrap">
+    <meta name="description" content="Projeto de estudos para manipular SVG com JavaScript.">
+    <!-- links fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- links style -->
+    <link rel="shortcut icon" href="img/javascript.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- script -->
+    <script 
+        defer 
+        src="js/main.min.js">
+    </script>
+
+    <title>SVG Manipulation</title>
+</head>
+<body>
+    <header class="fixed-top">
+        <div class="container-fluid">
+            <h1 class="fw-light fs-3 m-0 py-2 text-center">
+                <a data-action="content" class="text-decoration-none text-purple-dark" href="#home">SVG Manipulation</a>
+            </h1>            
+        </div>
+    </header>
+    <main class="my-5 py-5">
+        <div id="content" class="container-fluid">
+
+            <div class="d-flex flex-column justify-content-center align-items-center p-5">        
+                <img src="img/brasil.svg" alt="Brasil" id="mapa">
+                <div id="text" class="d-none">
+                    <h1 id="stateName" class="fw-light">{{stateName}}</h1>
+                    <h2 class="fw-light" id="statePopulation">{{statePopulation}}</h2>
+                    <p id="stateDescription" class="text-mute">{{stateDescription}}</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="fixed-bottom py-2">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <p id="date" class="m-0">{{Since 2026-11}}</p>
+                <nav id="nav-footer" class="btn-group">
+                    <a href="https://github.com/lluukinha/manipulateSvg" class="btn btn-sm btn-purple" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Forked <span class="d-none d-md-inline">from Lucas Souza</span></a>
+                    <a href="https://martchelou.github.io/" class="btn btn-sm btn-purple" target="_blank" rel="noopener noreferrer">[./M]</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+     <dialog id="modal">
+        <button id="modal-close-btn" class="btn" aria-label="fechar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+            </svg>
+        </button>
+        <div id="modal-body">
+            <div class="d-block mx-auto border-1 spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>        
+    </dialog>
+</body>
+</html>

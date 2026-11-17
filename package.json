@@ -1,0 +1,16 @@
+{
+  "name": "svg",
+  "description": "Manipulação de SVG com javascript",
+  "version": "1.7.1-69",  
+  "main": "public/index.html",
+  "scripts": {
+    "dev:js":"node build.js",
+    "dev:css": "sass --watch --style=compressed ./assets/sass/index.scss:./public/css/style.min.css"
+  },
+  "author": "@martchelou",
+  "type": "module",
+  "devDependencies": {
+    "bootstrap": "^5.3.8",
+    "esbuild": "^0.28.2"
+  }
+}

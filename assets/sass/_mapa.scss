@@ -1,0 +1,19 @@
+body {
+    background-color: var(--purple--50);
+}
+#svg-map {
+    cursor: pointer;
+    margin-bottom: calc(var(--gap) * 5);
+    a { 
+        stroke: var(--purple--200); 
+        text-decoration: none; 
+        font-weight: 100;
+    }
+    .circle, path {
+        fill: var(--purple--500);
+    }
+    a:hover .circle, a:hover path  {
+        fill: var(--purple--900);
+    }
+    
+}
